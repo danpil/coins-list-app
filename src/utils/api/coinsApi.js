@@ -10,8 +10,9 @@ class CoinsApi {
   async getAllCoins() {
     try {
       const { data } = await axios.get(this.path);
-      return data;
+      return Object.values(data.Data).slice(0, 20);
     } catch (e) {
+      debugger;
       return e;
     }
   }

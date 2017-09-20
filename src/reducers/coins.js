@@ -1,12 +1,11 @@
-import { FETCH_COINS, FETCH_COINS_ERROR, FETCH_COINS_SUCCESS } from '../actions/coins';
+import {
+  FETCH_COINS,
+  FETCH_COINS_ERROR,
+  FETCH_COINS_SUCCESS,
+} from '../actions/coins';
+import initialState from './initialState';
 
-const initialState = {
-  data: [],
-  error: null,
-  isFetched: false,
-};
-
-export default (state = initialState, action) => {
+export default (state = initialState.coins, action) => {
   switch (action.type) {
     case FETCH_COINS:
       return state;

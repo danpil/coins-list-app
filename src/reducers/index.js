@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import coins from './coins'
-//import { reducer as formReducer } from 'redux-form';
+import coins from './coins';
+import price from './price';
 
 export default combineReducers({
   coins,
-  //form: formReducer,
+  price,
 });

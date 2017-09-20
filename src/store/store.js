@@ -5,7 +5,7 @@ import thunk from 'redux-thunk';
 import rootReducer from './../reducers';
 
 const middlewares = [createLogger(), thunk];
-
+//debugger;
 export default createStore(
   rootReducer,
   undefined,
